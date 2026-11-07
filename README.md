@@ -2,8 +2,8 @@
 
 ### Architecture and Empirical Evaluation of a Data-Quality-Aware Clinical Decision Support System: Integrating LLM Priors and Machine Learning for Resource-Constrained Emergency Triage
 
-Published / Under Consideration in **Software (MDPI)**  
-Authors: **Sasithun Plengvittaya, MD** (Lampang Hospital) and **Chontipan Plengvittaya** (University of Phayao)
+## Research Project & Authors
+Authors: **Sasithun Plengvittaya, MD** (Lampang Hospital) and **Chontipan Plengvittaya, PhD** (University of Phayao)
 
 ---
 
