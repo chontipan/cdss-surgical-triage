@@ -9,15 +9,25 @@ from pathlib import Path
 
 # Add root directory to sys.path
 BASE_DIR = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(BASE_DIR))
 sys.path.insert(0, str(BASE_DIR.parent))
 
-from cdss_prototype.engine import evaluate_patient_payload
-from cdss_prototype.fhir_adapter import (
-    parse_fhir_observation_bundle,
-    generate_fhir_risk_assessment,
-    LOINC_CODES,
-    SNOMED_RUPTURED_APPENDICITIS
-)
+try:
+    from engine import evaluate_patient_payload
+    from fhir_adapter import (
+        parse_fhir_observation_bundle,
+        generate_fhir_risk_assessment,
+        LOINC_CODES,
+        SNOMED_RUPTURED_APPENDICITIS
+    )
+except ImportError:
+    from cdss_prototype.engine import evaluate_patient_payload
+    from cdss_prototype.fhir_adapter import (
+        parse_fhir_observation_bundle,
+        generate_fhir_risk_assessment,
+        LOINC_CODES,
+        SNOMED_RUPTURED_APPENDICITIS
+    )
 
 
 def test_physiological_bounds_clipping():

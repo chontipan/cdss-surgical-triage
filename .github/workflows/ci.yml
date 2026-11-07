@@ -24,4 +24,4 @@ jobs:
         
     - name: Execute Automated Unit & Regression Tests
       run: |
-        pytest tests/ -v
+        PYTHONPATH=. pytest tests/ -v

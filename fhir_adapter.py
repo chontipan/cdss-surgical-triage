@@ -7,7 +7,11 @@ Emits FHIR RiskAssessment resources with standardized LOINC and SNOMED-CT coding
 
 import uuid
 import datetime
-from cdss_prototype.engine import evaluate_patient_payload
+
+try:
+    from engine import evaluate_patient_payload
+except ImportError:
+    from cdss_prototype.engine import evaluate_patient_payload
 
 # Standard Clinical Coding Systems
 LOINC_CODES = {
