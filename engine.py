@@ -214,7 +214,7 @@ def evaluate_patient_payload(raw_data: dict) -> dict:
         risk_level = "HIGH RISK (RED ALERT)"
         risk_color = "#DC2626"
         recommendation = "High risk of perforation / generalized peritonitis. Urgent surgical consultation and OR booking within 2 hours recommended. Initiate aggressive IV hydration and broad-spectrum antibiotics."
-    elif prob_pct >= 22.0:
+    elif prob_pct >= 25.0:
         risk_level = "MODERATE RISK (YELLOW)"
         risk_color = "#D97706"
         recommendation = "Intermediate risk. Suspicion of phlegmonous gangrene or early micro-perforation. Expedite ultrasound or IV-contrast abdominal CT. Re-evaluate within 2 hours."
